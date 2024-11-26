@@ -1,0 +1,166 @@
+/* Global Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fffaf5, #fef4f0);
+    color: #4a3a33; /* Contraste renforcé */
+    overflow-x: hidden;
+    line-height: 1.8;
+}
+
+a {
+    color: #d4597a; /* Couleur plus saturée */
+    text-decoration: none;
+    font-weight: bold; /* Plus lisible */
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #b23358; /* Accentué au survol */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to bottom, rgba(255, 240, 240, 0.95), rgba(255, 220, 220, 0.8));
+    text-align: center;
+    padding: 6rem 2rem;
+    color: #4a3a33;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #b23358; /* Couleur renforcée pour le titre */
+    text-shadow: 0 0 10px rgba(178, 51, 88, 0.7), 0 0 20px rgba(230, 130, 160, 0.5);
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.4rem; /* Légèrement plus grand pour la lisibilité */
+    font-style: italic;
+    color: #634f4a; /* Couleur contrastée */
+    margin-bottom: 2rem;
+}
+
+header .btn {
+    display: inline-block;
+    background: #b23358; /* Bouton plus coloré */
+    color: #fff; /* Texte blanc pour le contraste */
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(178, 51, 88, 0.4);
+    transition: all 0.3s ease;
+}
+
+header .btn:hover {
+    background: #921540; /* Couleur plus foncée au survol */
+    box-shadow: 0 0 15px rgba(178, 51, 88, 0.7), 0 0 25px rgba(255, 133, 158, 0.5);
+}
+
+/* Section Styles */
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    border-radius: 15px;
+    background: #ffffff; /* Blanc pur pour le fond */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section h2 {
+    font-size: 2.8rem; /* Augmenté pour le contraste visuel */
+    color: #b23358; /* Couleur renforcée */
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 15px rgba(178, 51, 88, 0.6), 0 0 25px rgba(230, 130, 160, 0.4);
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #d4597a; /* Rose poudré plus marqué */
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+section p,
+section ul li {
+    font-size: 1.2rem; /* Texte agrandi */
+    color: #4a3a33; /* Texte bien contrasté */
+    line-height: 1.8;
+}
+
+/* Price Section */
+.price-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.price-box {
+    background: #fff8f7;
+    border: 2px solid #b23358; /* Couleur plus contrastée */
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(178, 51, 88, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(178, 51, 88, 0.6);
+}
+
+.price-box .price {
+    font-size: 2.4rem; /* Texte plus grand */
+    color: #b23358;
+    margin-bottom: 1rem;
+}
+
+.price-box .description {
+    font-size: 1.1rem;
+    color: #4a3a33;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to bottom, #b23358, #d4597a);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ffe4e1; /* Liens pastel élégants */
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
